@@ -27,6 +27,7 @@ import SliderEdit from "./pages/Admin/Slider/SliderEdit";
 import ProductEdit from "./pages/Admin/Products/ProductEdit";
 import CartPostManager from "./pages/Admin/Carts/CartManager";
 import CartUpdate from "./pages/Admin/Carts/CartUpdate";
+import PostPage from "./pages/Post";
 function App() {
   return (
     <>
@@ -76,6 +77,14 @@ function App() {
           element={
             <ClientLayout>
               <ContactPage />
+            </ClientLayout>
+          }
+        />
+        <Route
+          path="/post"
+          element={
+            <ClientLayout>
+              <PostPage />
             </ClientLayout>
           }
         />
