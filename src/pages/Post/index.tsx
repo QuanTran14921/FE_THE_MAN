@@ -1,6 +1,7 @@
 import { Pagination } from "antd";
 import React, { useEffect } from 'react'
 import { useSelector } from "react-redux";
+import SubBanner from "../../components/SubBanner";
 import { getPosts, setPage } from "../../redux/slices/postSlice";
 import { RootState, useAppDispatch } from "../../redux/store";
 import styles from "./FeaturedNews.module.css";
@@ -22,10 +23,7 @@ const PostPage = (props: Props) => {
   return (
     <div>
     <section className={styles.news}>
-      <section className={styles.subBanner}>
-            <img src='https://sss-dashboard.leanservices.work/upload/6-2022/1654695472615.jpeg' alt='1659522075021'/>
-
-    </section>
+    <SubBanner />
     <div className={styles.news__title}>
       <h2>Blog của chúng tôi</h2>
     </div>
